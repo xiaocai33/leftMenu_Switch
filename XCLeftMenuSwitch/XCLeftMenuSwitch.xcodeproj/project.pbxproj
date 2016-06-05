@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3344A2041D03DF04005A7C04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3344A2021D03DF04005A7C04 /* Main.storyboard */; };
+		3344A2061D03DF04005A7C04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3344A2051D03DF04005A7C04 /* Assets.xcassets */; };
+		3344A2141D03DF05005A7C04 /* XCLeftMenuSwitchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3344A2131D03DF05005A7C04 /* XCLeftMenuSwitchTests.m */; };
+		3344A21F1D03DF05005A7C04 /* XCLeftMenuSwitchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3344A21E1D03DF05005A7C04 /* XCLeftMenuSwitchUITests.m */; };
+		3344A2351D03DF74005A7C04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3344A2321D03DF74005A7C04 /* AppDelegate.m */; };
+		3344A2361D03DF74005A7C04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3344A2331D03DF74005A7C04 /* main.m */; };
+		3344A23B1D03E0C3005A7C04 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3344A23A1D03E0C3005A7C04 /* MainViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3344A2101D03DF05005A7C04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3344A1EE1D03DF03005A7C04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3344A1F51D03DF03005A7C04;
+			remoteInfo = XCLeftMenuSwitch;
+		};
+		3344A21B1D03DF05005A7C04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3344A1EE1D03DF03005A7C04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3344A1F51D03DF03005A7C04;
+			remoteInfo = XCLeftMenuSwitch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3344A1F61D03DF03005A7C04 /* XCLeftMenuSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCLeftMenuSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3344A2031D03DF04005A7C04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3344A2051D03DF04005A7C04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3344A20A1D03DF04005A7C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3344A20F1D03DF05005A7C04 /* XCLeftMenuSwitchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCLeftMenuSwitchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3344A2131D03DF05005A7C04 /* XCLeftMenuSwitchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCLeftMenuSwitchTests.m; sourceTree = "<group>"; };
+		3344A2151D03DF05005A7C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3344A21A1D03DF05005A7C04 /* XCLeftMenuSwitchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCLeftMenuSwitchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3344A21E1D03DF05005A7C04 /* XCLeftMenuSwitchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCLeftMenuSwitchUITests.m; sourceTree = "<group>"; };
+		3344A2201D03DF05005A7C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3344A2311D03DF74005A7C04 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3344A2321D03DF74005A7C04 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3344A2331D03DF74005A7C04 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3344A2391D03E0C3005A7C04 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		3344A23A1D03E0C3005A7C04 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3344A1F31D03DF03005A7C04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3344A20C1D03DF05005A7C04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3344A2171D03DF05005A7C04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3344A1ED1D03DF03005A7C04 = {
+			isa = PBXGroup;
+			children = (
+				3344A1F81D03DF04005A7C04 /* XCLeftMenuSwitch */,
+				3344A2121D03DF05005A7C04 /* XCLeftMenuSwitchTests */,
+				3344A21D1D03DF05005A7C04 /* XCLeftMenuSwitchUITests */,
+				3344A1F71D03DF03005A7C04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3344A1F71D03DF03005A7C04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3344A1F61D03DF03005A7C04 /* XCLeftMenuSwitch.app */,
+				3344A20F1D03DF05005A7C04 /* XCLeftMenuSwitchTests.xctest */,
+				3344A21A1D03DF05005A7C04 /* XCLeftMenuSwitchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3344A1F81D03DF04005A7C04 /* XCLeftMenuSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				3344A22C1D03DF74005A7C04 /* Classes */,
+				3344A1F91D03DF04005A7C04 /* Supporting Files */,
+			);
+			path = XCLeftMenuSwitch;
+			sourceTree = "<group>";
+		};
+		3344A1F91D03DF04005A7C04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3344A2021D03DF04005A7C04 /* Main.storyboard */,
+				3344A2051D03DF04005A7C04 /* Assets.xcassets */,
+				3344A20A1D03DF04005A7C04 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3344A2121D03DF05005A7C04 /* XCLeftMenuSwitchTests */ = {
+			isa = PBXGroup;
+			children = (
+				3344A2131D03DF05005A7C04 /* XCLeftMenuSwitchTests.m */,
+				3344A2151D03DF05005A7C04 /* Info.plist */,
+			);
+			path = XCLeftMenuSwitchTests;
+			sourceTree = "<group>";
+		};
+		3344A21D1D03DF05005A7C04 /* XCLeftMenuSwitchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3344A21E1D03DF05005A7C04 /* XCLeftMenuSwitchUITests.m */,
+				3344A2201D03DF05005A7C04 /* Info.plist */,
+			);
+			path = XCLeftMenuSwitchUITests;
+			sourceTree = "<group>";
+		};
+		3344A22C1D03DF74005A7C04 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3344A22D1D03DF74005A7C04 /* Cateory */,
+				3344A22E1D03DF74005A7C04 /* Controller */,
+				3344A22F1D03DF74005A7C04 /* Lib */,
+				3344A2301D03DF74005A7C04 /* Other */,
+				3344A2341D03DF74005A7C04 /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3344A22D1D03DF74005A7C04 /* Cateory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cateory;
+			sourceTree = "<group>";
+		};
+		3344A22E1D03DF74005A7C04 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3344A2391D03E0C3005A7C04 /* MainViewController.h */,
+				3344A23A1D03E0C3005A7C04 /* MainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3344A22F1D03DF74005A7C04 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		3344A2301D03DF74005A7C04 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				3344A2311D03DF74005A7C04 /* AppDelegate.h */,
+				3344A2321D03DF74005A7C04 /* AppDelegate.m */,
+				3344A2331D03DF74005A7C04 /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		3344A2341D03DF74005A7C04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3344A1F51D03DF03005A7C04 /* XCLeftMenuSwitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3344A2231D03DF05005A7C04 /* Build configuration list for PBXNativeTarget "XCLeftMenuSwitch" */;
+			buildPhases = (
+				3344A1F21D03DF03005A7C04 /* Sources */,
+				3344A1F31D03DF03005A7C04 /* Frameworks */,
+				3344A1F41D03DF03005A7C04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCLeftMenuSwitch;
+			productName = XCLeftMenuSwitch;
+			productReference = 3344A1F61D03DF03005A7C04 /* XCLeftMenuSwitch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3344A20E1D03DF05005A7C04 /* XCLeftMenuSwitchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3344A2261D03DF05005A7C04 /* Build configuration list for PBXNativeTarget "XCLeftMenuSwitchTests" */;
+			buildPhases = (
+				3344A20B1D03DF05005A7C04 /* Sources */,
+				3344A20C1D03DF05005A7C04 /* Frameworks */,
+				3344A20D1D03DF05005A7C04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3344A2111D03DF05005A7C04 /* PBXTargetDependency */,
+			);
+			name = XCLeftMenuSwitchTests;
+			productName = XCLeftMenuSwitchTests;
+			productReference = 3344A20F1D03DF05005A7C04 /* XCLeftMenuSwitchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3344A2191D03DF05005A7C04 /* XCLeftMenuSwitchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3344A2291D03DF05005A7C04 /* Build configuration list for PBXNativeTarget "XCLeftMenuSwitchUITests" */;
+			buildPhases = (
+				3344A2161D03DF05005A7C04 /* Sources */,
+				3344A2171D03DF05005A7C04 /* Frameworks */,
+				3344A2181D03DF05005A7C04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3344A21C1D03DF05005A7C04 /* PBXTargetDependency */,
+			);
+			name = XCLeftMenuSwitchUITests;
+			productName = XCLeftMenuSwitchUITests;
+			productReference = 3344A21A1D03DF05005A7C04 /* XCLeftMenuSwitchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3344A1EE1D03DF03005A7C04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = xiaocai;
+				TargetAttributes = {
+					3344A1F51D03DF03005A7C04 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					3344A20E1D03DF05005A7C04 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3344A1F51D03DF03005A7C04;
+					};
+					3344A2191D03DF05005A7C04 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3344A1F51D03DF03005A7C04;
+					};
+				};
+			};
+			buildConfigurationList = 3344A1F11D03DF03005A7C04 /* Build configuration list for PBXProject "XCLeftMenuSwitch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3344A1ED1D03DF03005A7C04;
+			productRefGroup = 3344A1F71D03DF03005A7C04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3344A1F51D03DF03005A7C04 /* XCLeftMenuSwitch */,
+				3344A20E1D03DF05005A7C04 /* XCLeftMenuSwitchTests */,
+				3344A2191D03DF05005A7C04 /* XCLeftMenuSwitchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3344A1F41D03DF03005A7C04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3344A2061D03DF04005A7C04 /* Assets.xcassets in Resources */,
+				3344A2041D03DF04005A7C04 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3344A20D1D03DF05005A7C04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3344A2181D03DF05005A7C04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3344A1F21D03DF03005A7C04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3344A2361D03DF74005A7C04 /* main.m in Sources */,
+				3344A23B1D03E0C3005A7C04 /* MainViewController.m in Sources */,
+				3344A2351D03DF74005A7C04 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3344A20B1D03DF05005A7C04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3344A2141D03DF05005A7C04 /* XCLeftMenuSwitchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3344A2161D03DF05005A7C04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3344A21F1D03DF05005A7C04 /* XCLeftMenuSwitchUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3344A2111D03DF05005A7C04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3344A1F51D03DF03005A7C04 /* XCLeftMenuSwitch */;
+			targetProxy = 3344A2101D03DF05005A7C04 /* PBXContainerItemProxy */;
+		};
+		3344A21C1D03DF05005A7C04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3344A1F51D03DF03005A7C04 /* XCLeftMenuSwitch */;
+			targetProxy = 3344A21B1D03DF05005A7C04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3344A2021D03DF04005A7C04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3344A2031D03DF04005A7C04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3344A2211D03DF05005A7C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3344A2221D03DF05005A7C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3344A2241D03DF05005A7C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = XCLeftMenuSwitch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uestc.XCLeftMenuSwitch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3344A2251D03DF05005A7C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = XCLeftMenuSwitch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uestc.XCLeftMenuSwitch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3344A2271D03DF05005A7C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XCLeftMenuSwitchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uestc.XCLeftMenuSwitchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XCLeftMenuSwitch.app/XCLeftMenuSwitch";
+			};
+			name = Debug;
+		};
+		3344A2281D03DF05005A7C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XCLeftMenuSwitchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uestc.XCLeftMenuSwitchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XCLeftMenuSwitch.app/XCLeftMenuSwitch";
+			};
+			name = Release;
+		};
+		3344A22A1D03DF05005A7C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XCLeftMenuSwitchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uestc.XCLeftMenuSwitchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XCLeftMenuSwitch;
+			};
+			name = Debug;
+		};
+		3344A22B1D03DF05005A7C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XCLeftMenuSwitchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uestc.XCLeftMenuSwitchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XCLeftMenuSwitch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3344A1F11D03DF03005A7C04 /* Build configuration list for PBXProject "XCLeftMenuSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3344A2211D03DF05005A7C04 /* Debug */,
+				3344A2221D03DF05005A7C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3344A2231D03DF05005A7C04 /* Build configuration list for PBXNativeTarget "XCLeftMenuSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3344A2241D03DF05005A7C04 /* Debug */,
+				3344A2251D03DF05005A7C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3344A2261D03DF05005A7C04 /* Build configuration list for PBXNativeTarget "XCLeftMenuSwitchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3344A2271D03DF05005A7C04 /* Debug */,
+				3344A2281D03DF05005A7C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3344A2291D03DF05005A7C04 /* Build configuration list for PBXNativeTarget "XCLeftMenuSwitchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3344A22A1D03DF05005A7C04 /* Debug */,
+				3344A22B1D03DF05005A7C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3344A1EE1D03DF03005A7C04 /* Project object */;
+}
