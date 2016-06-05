@@ -9,11 +9,12 @@
 #import "RightViewController.h"
 #import "RightUpView.h"
 #import "RightMiddleView.h"
+#import "RightBottomView.h"
 
 @interface RightViewController()
 
 @property (nonatomic, weak) RightUpView *rightUpView;
-@property (nonatomic, weak) UIView *centerView;
+@property (nonatomic, weak) UIView *bottomView;
 
 @end
 
@@ -25,7 +26,7 @@
     //添加上部分View
     [self setupUpView];
     
-    //添加中间部分View
+    
     
     //添加下半部分View
 }
@@ -54,6 +55,7 @@
     [self.view addSubview:label];
     label.sd_layout.leftEqualToView(self.view).rightEqualToView(self.view).topSpaceToView(loginLabel, 5).heightIs(20);
     
+    //添加中间部分View
     RightMiddleView *row1 = [self setupCenterViewRow:@"商城 能赚能花，土豪当家" icon:@"promoboard_icon_mall"];
     row1.sd_layout.leftEqualToView(self.view).rightEqualToView(self.view).topSpaceToView(label, 10).heightIs(44);
     
@@ -62,6 +64,10 @@
     
     RightMiddleView *row3 = [self setupCenterViewRow:@"应用 金币从来都是这送的" icon:@"promoboard_icon_apps"];
     row3.sd_layout.leftEqualToView(self.view).rightEqualToView(self.view).topSpaceToView(row2, 2).heightIs(44);
+    
+    RightBottomView *bottom = [[RightBottomView alloc] init];
+    [self.view addSubview:bottom];
+    bottom.sd_layout.leftSpaceToView(self.view, 10).rightSpaceToView(self.view, 10).topSpaceToView(row3, 10).heightIs(200);
     
 }
 /**

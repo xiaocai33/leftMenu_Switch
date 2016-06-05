@@ -28,6 +28,7 @@
 		33D6C3E81D04403A0093ED33 /* RightUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D6C3E71D04403A0093ED33 /* RightUpView.m */; };
 		33D6C3EB1D0451DD0093ED33 /* RightMiddleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D6C3EA1D0451DD0093ED33 /* RightMiddleView.m */; };
 		33D6C3ED1D0451F50093ED33 /* RightMiddleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33D6C3EC1D0451F50093ED33 /* RightMiddleView.xib */; };
+		33D6C3F31D045C7F0093ED33 /* RightBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D6C3F21D045C7F0093ED33 /* RightBottomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,8 @@
 		33D6C3E91D0451DD0093ED33 /* RightMiddleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightMiddleView.h; sourceTree = "<group>"; };
 		33D6C3EA1D0451DD0093ED33 /* RightMiddleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightMiddleView.m; sourceTree = "<group>"; };
 		33D6C3EC1D0451F50093ED33 /* RightMiddleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightMiddleView.xib; sourceTree = "<group>"; };
+		33D6C3F11D045C7F0093ED33 /* RightBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightBottomView.h; sourceTree = "<group>"; };
+		33D6C3F21D045C7F0093ED33 /* RightBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightBottomView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +251,8 @@
 				33D6C3E91D0451DD0093ED33 /* RightMiddleView.h */,
 				33D6C3EA1D0451DD0093ED33 /* RightMiddleView.m */,
 				33D6C3EC1D0451F50093ED33 /* RightMiddleView.xib */,
+				33D6C3F11D045C7F0093ED33 /* RightBottomView.h */,
+				33D6C3F21D045C7F0093ED33 /* RightBottomView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -404,6 +409,7 @@
 				33D6C3D61D0409FF0093ED33 /* LeftMenuButton.m in Sources */,
 				33D6C3E51D0422EB0093ED33 /* RightViewController.m in Sources */,
 				3344A2351D03DF74005A7C04 /* AppDelegate.m in Sources */,
+				33D6C3F31D045C7F0093ED33 /* RightBottomView.m in Sources */,
 				33D6C3DC1D0410110093ED33 /* TitleView.m in Sources */,
 				3344A24F1D040204005A7C04 /* LeftMenuView.m in Sources */,
 				33D6C3D91D040EE70093ED33 /* NavigationController.m in Sources */,
