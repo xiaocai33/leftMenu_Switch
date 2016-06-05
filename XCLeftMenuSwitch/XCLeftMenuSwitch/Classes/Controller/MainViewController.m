@@ -16,4 +16,11 @@
     self.view.backgroundColor = [UIColor grayColor];
 }
 
+/**
+ *  设置控制器的StatusBarStyle
+ */
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+
 @end
