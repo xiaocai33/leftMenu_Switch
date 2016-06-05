@@ -38,6 +38,15 @@
     }
     return self;
 }
+/**
+ *  代理出来的时候,默认选中按钮
+ */
+- (void)setDelegate:(id<LeftMenuViewDelegate>)delegate{
+    _delegate = delegate;
+    
+    // 默认选中新闻按钮
+    [self btnClick:[self.subviews firstObject]];
+}
 
 /**
  *  添加按钮
@@ -88,6 +97,10 @@
 }
 
 - (void)btnClick:(LeftMenuButton *)btn{
+    
+    if ([self.delegate respondsToSelector:@selector(leftMenu:didSelectedButtonFromIndex:toIndex:)]) {
+        [self.delegate leftMenu:self didSelectedButtonFromIndex:self.selectBtn.tag toIndex:btn.tag];
+    }
     self.selectBtn.selected = NO;
     btn.selected = YES;
     self.selectBtn = btn;

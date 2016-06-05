@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@class LeftMenuView;
+@protocol LeftMenuViewDelegate <NSObject>
+
+- (void)leftMenu:(LeftMenuView *)menu didSelectedButtonFromIndex:(NSInteger)fromIndex toIndex:(NSInteger)toIndex;
+
+@end
 
 @interface LeftMenuView : UIView
-
+@property (nonatomic, weak) id<LeftMenuViewDelegate> delegate;
 @end

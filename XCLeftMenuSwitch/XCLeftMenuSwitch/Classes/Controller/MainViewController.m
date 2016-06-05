@@ -17,7 +17,7 @@
 #define LeftMenuY 50
 #define CoverTag 237
 #define NavShowAnimDuration 1.0
-@interface MainViewController()
+@interface MainViewController() <LeftMenuViewDelegate>
 
 /**
  *  正在显示的导航控制器
@@ -49,25 +49,25 @@
     UITableViewController *news = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
     [self setupVc:news title:@"新闻"];
     
-//    // 2.订阅控制器
-//    UITableViewController *reading = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
-//    [self setupVc:reading title:@"订阅"];
-//    
-//    // 3.图片控制器
-//    UIViewController *photo = [[UIViewController alloc] init];
-//    [self setupVc:photo title:@"图片"];
-//    
-//    // 4.视频控制器
-//    UIViewController *video = [[UIViewController alloc] init];
-//    [self setupVc:video title:@"视频"];
-//    
-//    // 5.跟帖控制器
-//    UIViewController *comment = [[UIViewController alloc] init];
-//    [self setupVc:comment title:@"跟帖"];
-//    
-//    // 6.电台控制器
-//    UIViewController *radio = [[UIViewController alloc] init];
-//    [self setupVc:radio title:@"电台"];
+    // 2.订阅控制器
+    UITableViewController *reading = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
+    [self setupVc:reading title:@"订阅"];
+    
+    // 3.图片控制器
+    UIViewController *photo = [[UIViewController alloc] init];
+    [self setupVc:photo title:@"图片"];
+    
+    // 4.视频控制器
+    UIViewController *video = [[UIViewController alloc] init];
+    [self setupVc:video title:@"视频"];
+    
+    // 5.跟帖控制器
+    UIViewController *comment = [[UIViewController alloc] init];
+    [self setupVc:comment title:@"跟帖"];
+    
+    // 6.电台控制器
+    UIViewController *radio = [[UIViewController alloc] init];
+    [self setupVc:radio title:@"电台"];
 }
 
 /**
@@ -91,8 +91,6 @@
     // 包装一个导航控制器
     NavigationController *nav = [[NavigationController alloc] initWithRootViewController:vc];
     [self addChildViewController:nav];
-    [self.view addSubview:nav.view];
-    self.showingNavigationController = nav;
     
 }
 
@@ -102,6 +100,7 @@
  */
 - (void)addLeftMenu{
     LeftMenuView *leftMenu = [[LeftMenuView alloc] init];
+    leftMenu.delegate = self;
     [self.view insertSubview:leftMenu atIndex:1];
     leftMenu.sd_layout.leftEqualToView(self.view).topSpaceToView(self.view, LeftMenuY).heightIs(LeftMenuHeight).widthIs(LeftMenuWidth);
 }
@@ -110,7 +109,7 @@
  *  左菜单按钮点击:实现显示控制器的缩放
  */
 - (void)leftMenuBtnClick{
-    NSLog(@"leftMenuBtnClick");
+    //NSLog(@"leftMenuBtnClick");
     [UIView animateWithDuration:NavShowAnimDuration animations:^{
         // 取出正在显示的导航控制器的view
         UIView *showingView = self.showingNavigationController.view;
@@ -158,6 +157,33 @@
  */
 - (void)rightMenuBtnClick{
 
+}
+
+#pragma mark - LeftMenuViewDelegate
+- (void)leftMenu:(LeftMenuView *)menu didSelectedButtonFromIndex:(NSInteger)fromIndex toIndex:(NSInteger)toIndex{
+    // 0.移除旧控制器的view
+    NavigationController *oldNav = self.childViewControllers[fromIndex];
+    [oldNav.view removeFromSuperview];
+    
+    // 1.添加新的控制器View
+    NavigationController *newNav = self.childViewControllers[toIndex];
+    [self.view addSubview:newNav.view];
+    
+    // 2.设置新控制的transform跟旧控制器一样
+    newNav.view.transform = oldNav.view.transform;
+    
+    // 设置阴影
+    newNav.view.layer.shadowColor = [UIColor blackColor].CGColor;
+    newNav.view.layer.shadowOffset = CGSizeMake(-3, 0);
+    newNav.view.layer.shadowOpacity = 0.2;
+    
+    // 一个导航控制器的view第一次显示到它的父控件上时，如果transform的缩放值被改了，上面的20高度当时是不会出来
+    
+    // 2.设置当前正在显示的控制器
+    self.showingNavigationController = newNav;
+    
+    // 3.单击遮盖
+    [self coverClick:[newNav.view viewWithTag:CoverTag]];
 }
 
 /**
