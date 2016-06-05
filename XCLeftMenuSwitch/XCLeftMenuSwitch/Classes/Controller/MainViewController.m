@@ -10,11 +10,15 @@
 #import "LeftMenuView.h"
 #import "TitleView.h"
 #import "NavigationController.h"
+#import "RightViewController.h"
 
 /** 左菜单的宽高 */
 #define LeftMenuWidth 170
 #define LeftMenuHeight 300
 #define LeftMenuY 50
+
+#define RightMenuWidth 260
+
 #define CoverTag 237
 #define NavShowAnimDuration 1.0
 @interface MainViewController() <LeftMenuViewDelegate>
@@ -23,6 +27,8 @@
  *  正在显示的导航控制器
  */
 @property (nonatomic, weak) NavigationController *showingNavigationController;
+@property (nonatomic, weak) LeftMenuView *leftMenuView;
+@property (nonatomic, weak) RightViewController *rightVc;
 
 @end
 
@@ -39,6 +45,7 @@
     [self addLeftMenu];
     
     //添加右菜单
+    [self addRightMenu];
     
 }
 /**
@@ -103,12 +110,25 @@
     leftMenu.delegate = self;
     [self.view insertSubview:leftMenu atIndex:1];
     leftMenu.sd_layout.leftEqualToView(self.view).topSpaceToView(self.view, LeftMenuY).heightIs(LeftMenuHeight).widthIs(LeftMenuWidth);
+    self.leftMenuView = leftMenu;
+}
+
+/**
+ *  添加右菜单
+ */
+- (void)addRightMenu{
+    RightViewController *rightMenuVc = [[RightViewController alloc] init];
+    [self.view insertSubview:rightMenuVc.view atIndex:1];
+    rightMenuVc.view.sd_layout.rightEqualToView(self.view).topEqualToView(self.view).bottomEqualToView(self.view).widthIs(RightMenuWidth);
+    self.rightVc = rightMenuVc;
 }
 
 /**
  *  左菜单按钮点击:实现显示控制器的缩放
  */
 - (void)leftMenuBtnClick{
+    self.leftMenuView.hidden = NO;
+    self.rightVc.view.hidden = YES;
     //NSLog(@"leftMenuBtnClick");
     [UIView animateWithDuration:NavShowAnimDuration animations:^{
         // 取出正在显示的导航控制器的view
@@ -143,19 +163,52 @@
     }];
 }
 
+/**
+ *  右菜单按钮点击
+ */
+- (void)rightMenuBtnClick{
+    self.leftMenuView.hidden = YES;
+    self.rightVc.view.hidden = NO;
+    [UIView animateWithDuration:NavShowAnimDuration animations:^{
+        // 取出正在显示的导航控制器的view
+        UIView *showingView = self.showingNavigationController.view;
+        
+        //计算缩放比例
+        CGFloat navH = [UIScreen mainScreen].bounds.size.height - LeftMenuY * 2;
+        CGFloat scale = navH / [UIScreen mainScreen].bounds.size.height;
+        
+        //计算左边菜单的距离
+        CGFloat leftMenuMargin = [UIScreen mainScreen].bounds.size.width * (1 - scale) * 0.5;
+        CGFloat translateX = leftMenuMargin - RightMenuWidth;
+        
+        CGFloat topMargin = [UIScreen mainScreen].bounds.size.height * (1 - scale) * 0.5;
+        CGFloat translateY = LeftMenuY - topMargin;
+        
+        //缩放
+        CGAffineTransform scaleForm = CGAffineTransformMakeScale(scale, scale);
+        
+        // 平移
+        CGAffineTransform translateForm = CGAffineTransformTranslate(scaleForm, translateX / scale, translateY / scale);
+        
+        showingView.transform = translateForm;
+        
+        //添加遮盖
+        // 添加一个遮盖
+        UIButton *cover = [[UIButton alloc] init];
+        cover.tag = CoverTag;
+        [cover addTarget:self action:@selector(coverClick:) forControlEvents:UIControlEventTouchUpInside];
+        cover.frame = showingView.bounds;
+        [showingView addSubview:cover];
+    }];
+
+}
+
 - (void)coverClick:(UIView *)cover{
     [UIView animateWithDuration:NavShowAnimDuration animations:^{
         self.showingNavigationController.view.transform = CGAffineTransformIdentity;
     } completion:^(BOOL finished) {
         [cover removeFromSuperview];
     }];
-
-}
-
-/**
- *  右菜单按钮点击
- */
-- (void)rightMenuBtnClick{
 
 }
 
