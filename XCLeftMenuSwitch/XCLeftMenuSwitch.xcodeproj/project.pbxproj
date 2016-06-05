@@ -17,6 +17,10 @@
 		3344A2441D03E3F9005A7C04 /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3344A2431D03E3F9005A7C04 /* AdViewController.m */; };
 		3344A24A1D03E676005A7C04 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 3344A2471D03E676005A7C04 /* UITableView+SDAutoTableViewCellHeight.m */; };
 		3344A24B1D03E676005A7C04 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3344A2491D03E676005A7C04 /* UIView+SDAutoLayout.m */; };
+		3344A24F1D040204005A7C04 /* LeftMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3344A24E1D040204005A7C04 /* LeftMenuView.m */; };
+		33D6C3D01D0407CE0093ED33 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D6C3CF1D0407CE0093ED33 /* UIImage+Extension.m */; };
+		33D6C3D31D04096D0093ED33 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D6C3D21D04096D0093ED33 /* UIView+Extension.m */; };
+		33D6C3D61D0409FF0093ED33 /* LeftMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D6C3D51D0409FF0093ED33 /* LeftMenuButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,14 @@
 		3344A2481D03E676005A7C04 /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
 		3344A2491D03E676005A7C04 /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
 		3344A24C1D03E68D005A7C04 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3344A24D1D040204005A7C04 /* LeftMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuView.h; sourceTree = "<group>"; };
+		3344A24E1D040204005A7C04 /* LeftMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuView.m; sourceTree = "<group>"; };
+		33D6C3CE1D0407CE0093ED33 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		33D6C3CF1D0407CE0093ED33 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		33D6C3D11D04096D0093ED33 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		33D6C3D21D04096D0093ED33 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		33D6C3D41D0409FF0093ED33 /* LeftMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuButton.h; sourceTree = "<group>"; };
+		33D6C3D51D0409FF0093ED33 /* LeftMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +171,10 @@
 		3344A22D1D03DF74005A7C04 /* Cateory */ = {
 			isa = PBXGroup;
 			children = (
+				33D6C3CE1D0407CE0093ED33 /* UIImage+Extension.h */,
+				33D6C3CF1D0407CE0093ED33 /* UIImage+Extension.m */,
+				33D6C3D11D04096D0093ED33 /* UIView+Extension.h */,
+				33D6C3D21D04096D0093ED33 /* UIView+Extension.m */,
 			);
 			path = Cateory;
 			sourceTree = "<group>";
@@ -195,6 +211,10 @@
 		3344A2341D03DF74005A7C04 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3344A24D1D040204005A7C04 /* LeftMenuView.h */,
+				3344A24E1D040204005A7C04 /* LeftMenuView.m */,
+				33D6C3D41D0409FF0093ED33 /* LeftMenuButton.h */,
+				33D6C3D51D0409FF0093ED33 /* LeftMenuButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -339,12 +359,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D6C3D31D04096D0093ED33 /* UIView+Extension.m in Sources */,
 				3344A2361D03DF74005A7C04 /* main.m in Sources */,
 				3344A2441D03E3F9005A7C04 /* AdViewController.m in Sources */,
 				3344A24B1D03E676005A7C04 /* UIView+SDAutoLayout.m in Sources */,
 				3344A23B1D03E0C3005A7C04 /* MainViewController.m in Sources */,
+				33D6C3D61D0409FF0093ED33 /* LeftMenuButton.m in Sources */,
 				3344A2351D03DF74005A7C04 /* AppDelegate.m in Sources */,
+				3344A24F1D040204005A7C04 /* LeftMenuView.m in Sources */,
 				3344A24A1D03E676005A7C04 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
+				33D6C3D01D0407CE0093ED33 /* UIImage+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
