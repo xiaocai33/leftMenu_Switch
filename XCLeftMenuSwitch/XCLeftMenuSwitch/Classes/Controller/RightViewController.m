@@ -8,10 +8,12 @@
 
 #import "RightViewController.h"
 #import "RightUpView.h"
+#import "RightMiddleView.h"
 
 @interface RightViewController()
 
 @property (nonatomic, weak) RightUpView *rightUpView;
+@property (nonatomic, weak) UIView *centerView;
 
 @end
 
@@ -22,10 +24,12 @@
     self.view.backgroundColor = [UIColor clearColor];
     //添加上部分View
     [self setupUpView];
+    
     //添加中间部分View
     
     //添加下半部分View
 }
+
 
 - (void)setupUpView{
     RightUpView *upView = [[RightUpView alloc] init];
@@ -50,7 +54,28 @@
     [self.view addSubview:label];
     label.sd_layout.leftEqualToView(self.view).rightEqualToView(self.view).topSpaceToView(loginLabel, 5).heightIs(20);
     
+    RightMiddleView *row1 = [self setupCenterViewRow:@"商城 能赚能花，土豪当家" icon:@"promoboard_icon_mall"];
+    row1.sd_layout.leftEqualToView(self.view).rightEqualToView(self.view).topSpaceToView(label, 10).heightIs(44);
+    
+    RightMiddleView *row2 = [self setupCenterViewRow:@"活动 4.0发布会粉丝招募" icon:@"promoboard_icon_activities"];
+    row2.sd_layout.leftEqualToView(self.view).rightEqualToView(self.view).topSpaceToView(row1, 2).heightIs(44);
+    
+    RightMiddleView *row3 = [self setupCenterViewRow:@"应用 金币从来都是这送的" icon:@"promoboard_icon_apps"];
+    row3.sd_layout.leftEqualToView(self.view).rightEqualToView(self.view).topSpaceToView(row2, 2).heightIs(44);
+    
 }
+/**
+ *  填充中间的内容
+ */
+- (RightMiddleView *)setupCenterViewRow:(NSString *)title icon:(NSString *)icon
+{
+    RightMiddleView *row = [RightMiddleView rightMiddleView];
+    row.icon = icon;
+    row.title = title;
+    [self.view addSubview:row];
+    return row;
+}
+
 
 - (void)didShow{
     //转场动画
