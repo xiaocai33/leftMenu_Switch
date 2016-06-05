@@ -28,7 +28,7 @@
  */
 @property (nonatomic, weak) NavigationController *showingNavigationController;
 @property (nonatomic, weak) LeftMenuView *leftMenuView;
-@property (nonatomic, weak) RightViewController *rightVc;
+@property (nonatomic, strong) RightViewController *rightVc;
 
 @end
 

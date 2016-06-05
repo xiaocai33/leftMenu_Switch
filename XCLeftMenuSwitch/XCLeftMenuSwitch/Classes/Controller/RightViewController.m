@@ -12,6 +12,14 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     self.view.backgroundColor = XCRadomColor;
+    
+    //添加上部分View
+    
+    //添加中间部分View
+    
+    //添加下半部分View
+    
+    
 }
 
 @end
