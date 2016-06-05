@@ -21,6 +21,9 @@
 		33D6C3D01D0407CE0093ED33 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D6C3CF1D0407CE0093ED33 /* UIImage+Extension.m */; };
 		33D6C3D31D04096D0093ED33 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D6C3D21D04096D0093ED33 /* UIView+Extension.m */; };
 		33D6C3D61D0409FF0093ED33 /* LeftMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D6C3D51D0409FF0093ED33 /* LeftMenuButton.m */; };
+		33D6C3D91D040EE70093ED33 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D6C3D81D040EE70093ED33 /* NavigationController.m */; };
+		33D6C3DC1D0410110093ED33 /* TitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D6C3DB1D0410110093ED33 /* TitleView.m */; };
+		33D6C3E21D0411ED0093ED33 /* UIBarButtonItem+Extent.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D6C3E11D0411ED0093ED33 /* UIBarButtonItem+Extent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,12 @@
 		33D6C3D21D04096D0093ED33 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		33D6C3D41D0409FF0093ED33 /* LeftMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuButton.h; sourceTree = "<group>"; };
 		33D6C3D51D0409FF0093ED33 /* LeftMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuButton.m; sourceTree = "<group>"; };
+		33D6C3D71D040EE70093ED33 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		33D6C3D81D040EE70093ED33 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		33D6C3DA1D0410110093ED33 /* TitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleView.h; sourceTree = "<group>"; };
+		33D6C3DB1D0410110093ED33 /* TitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleView.m; sourceTree = "<group>"; };
+		33D6C3E01D0411ED0093ED33 /* UIBarButtonItem+Extent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extent.h"; sourceTree = "<group>"; };
+		33D6C3E11D0411ED0093ED33 /* UIBarButtonItem+Extent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extent.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +184,8 @@
 				33D6C3CF1D0407CE0093ED33 /* UIImage+Extension.m */,
 				33D6C3D11D04096D0093ED33 /* UIView+Extension.h */,
 				33D6C3D21D04096D0093ED33 /* UIView+Extension.m */,
+				33D6C3E01D0411ED0093ED33 /* UIBarButtonItem+Extent.h */,
+				33D6C3E11D0411ED0093ED33 /* UIBarButtonItem+Extent.m */,
 			);
 			path = Cateory;
 			sourceTree = "<group>";
@@ -184,6 +195,8 @@
 			children = (
 				3344A2391D03E0C3005A7C04 /* MainViewController.h */,
 				3344A23A1D03E0C3005A7C04 /* MainViewController.m */,
+				33D6C3D71D040EE70093ED33 /* NavigationController.h */,
+				33D6C3D81D040EE70093ED33 /* NavigationController.m */,
 				3344A2421D03E3F9005A7C04 /* AdViewController.h */,
 				3344A2431D03E3F9005A7C04 /* AdViewController.m */,
 			);
@@ -215,6 +228,8 @@
 				3344A24E1D040204005A7C04 /* LeftMenuView.m */,
 				33D6C3D41D0409FF0093ED33 /* LeftMenuButton.h */,
 				33D6C3D51D0409FF0093ED33 /* LeftMenuButton.m */,
+				33D6C3DA1D0410110093ED33 /* TitleView.h */,
+				33D6C3DB1D0410110093ED33 /* TitleView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -360,13 +375,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				33D6C3D31D04096D0093ED33 /* UIView+Extension.m in Sources */,
+				33D6C3E21D0411ED0093ED33 /* UIBarButtonItem+Extent.m in Sources */,
 				3344A2361D03DF74005A7C04 /* main.m in Sources */,
 				3344A2441D03E3F9005A7C04 /* AdViewController.m in Sources */,
 				3344A24B1D03E676005A7C04 /* UIView+SDAutoLayout.m in Sources */,
 				3344A23B1D03E0C3005A7C04 /* MainViewController.m in Sources */,
 				33D6C3D61D0409FF0093ED33 /* LeftMenuButton.m in Sources */,
 				3344A2351D03DF74005A7C04 /* AppDelegate.m in Sources */,
+				33D6C3DC1D0410110093ED33 /* TitleView.m in Sources */,
 				3344A24F1D040204005A7C04 /* LeftMenuView.m in Sources */,
+				33D6C3D91D040EE70093ED33 /* NavigationController.m in Sources */,
 				3344A24A1D03E676005A7C04 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				33D6C3D01D0407CE0093ED33 /* UIImage+Extension.m in Sources */,
 			);

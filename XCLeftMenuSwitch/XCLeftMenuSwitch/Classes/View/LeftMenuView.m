@@ -66,6 +66,8 @@
     btn.contentEdgeInsets = UIEdgeInsetsMake(0, 30, 0, 0);
     btn.titleEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
     
+    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchDown];
+    
     [self addSubview:btn];
     return btn;
 }
@@ -83,7 +85,12 @@
         btn.x = 0;
         btn.y = i * btnH;
     }
-    
+}
+
+- (void)btnClick:(LeftMenuButton *)btn{
+    self.selectBtn.selected = NO;
+    btn.selected = YES;
+    self.selectBtn = btn;
 }
 
 @end
