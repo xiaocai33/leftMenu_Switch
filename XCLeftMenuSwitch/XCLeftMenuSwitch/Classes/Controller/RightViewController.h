@@ -10,5 +10,8 @@
 
 @interface RightViewController : UIViewController
 
-
+/**
+ *  右边菜单全部显示出来
+ */
+- (void)didShow;
 @end

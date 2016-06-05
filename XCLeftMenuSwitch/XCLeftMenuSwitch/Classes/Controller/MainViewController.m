@@ -199,6 +199,8 @@
         [cover addTarget:self action:@selector(coverClick:) forControlEvents:UIControlEventTouchUpInside];
         cover.frame = showingView.bounds;
         [showingView addSubview:cover];
+    } completion:^(BOOL finished) {
+        [self.rightVc didShow];
     }];
 
 }

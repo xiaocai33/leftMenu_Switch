@@ -25,6 +25,7 @@
 		33D6C3DC1D0410110093ED33 /* TitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D6C3DB1D0410110093ED33 /* TitleView.m */; };
 		33D6C3E21D0411ED0093ED33 /* UIBarButtonItem+Extent.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D6C3E11D0411ED0093ED33 /* UIBarButtonItem+Extent.m */; };
 		33D6C3E51D0422EB0093ED33 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D6C3E41D0422EB0093ED33 /* RightViewController.m */; };
+		33D6C3E81D04403A0093ED33 /* RightUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D6C3E71D04403A0093ED33 /* RightUpView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,8 @@
 		33D6C3E11D0411ED0093ED33 /* UIBarButtonItem+Extent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extent.m"; sourceTree = "<group>"; };
 		33D6C3E31D0422EB0093ED33 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
 		33D6C3E41D0422EB0093ED33 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
+		33D6C3E61D04403A0093ED33 /* RightUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightUpView.h; sourceTree = "<group>"; };
+		33D6C3E71D04403A0093ED33 /* RightUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightUpView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +238,8 @@
 				33D6C3D51D0409FF0093ED33 /* LeftMenuButton.m */,
 				33D6C3DA1D0410110093ED33 /* TitleView.h */,
 				33D6C3DB1D0410110093ED33 /* TitleView.m */,
+				33D6C3E61D04403A0093ED33 /* RightUpView.h */,
+				33D6C3E71D04403A0093ED33 /* RightUpView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -385,6 +390,7 @@
 				3344A2441D03E3F9005A7C04 /* AdViewController.m in Sources */,
 				3344A24B1D03E676005A7C04 /* UIView+SDAutoLayout.m in Sources */,
 				3344A23B1D03E0C3005A7C04 /* MainViewController.m in Sources */,
+				33D6C3E81D04403A0093ED33 /* RightUpView.m in Sources */,
 				33D6C3D61D0409FF0093ED33 /* LeftMenuButton.m in Sources */,
 				33D6C3E51D0422EB0093ED33 /* RightViewController.m in Sources */,
 				3344A2351D03DF74005A7C04 /* AppDelegate.m in Sources */,
